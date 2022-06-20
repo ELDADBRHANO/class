@@ -107,28 +107,25 @@
 // }
 
 
-class Course{
- constructor(privateName,luctrerINOrNot,grades,students){
-  this.privateName=privateName;
-  this.luctrerINOrNot=luctrerINOrNot;
-  this.grades=grades;
-  this.students=students;
- }
-}
+// class Course{
+//  constructor(privateName,luctrerINOrNot,grades,students){
+//   this.privateName=privateName;
+//   this.luctrerINOrNot=luctrerINOrNot;
+//   this.grades=grades;
+//   this.students=students;
+//  }
+// }
 
-let arrayGrades=[100,89,55,66,43,22,7,66];
-let studentsArray=["lior","eldad","shimon","batel","dalia","daniel","netanel"];
-function printToScreen() {
-  let show = new Course("FULL-STACK","YES",arrayGrades,studentsArray);
-  for (const key1 in show) {
-    arrayGrades.forEach(item => {
-      id_h1.innerHTML=`${item[key1]}`
-   });
-   for (const key in show) {
-    studentsArray.forEach(item => {
-      id_h1.innerHTML=`${item[key]}`
-   });
-  }
-}
-}
-printToScreen()
+// let arrayGrades=["20","89","55","66","43","22","7","100"];
+// let studentsArray=["lior","eldad","shimon","batel","dalia","daniel","netanel"];
+// function printToScreen() {
+//   let show = new Course("FULL-STACK","YES",arrayGrades,studentsArray);
+// for (const key in show) {
+//   id_div.innerHTML+= `${key} : ${show[key]}` + " ";
+// }
+// id_div.innerHTML+= studentsArray.sort();  
+// id_div.innerHTML+= "<br>"+ arrayGrades.sort((a,b) => {
+//   return b-a 
+// }) 
+// }
+// printToScreen()
