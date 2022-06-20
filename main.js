@@ -78,30 +78,57 @@
 
 
 // 9
-class Teacher{
-  constructor(privateName,lastName,grade,email){
-    this.privateName=privateName;
-    this.lastName=lastName;
-    this.grade=grade;
-    this.email=email;
-  }
-}
+// class Teacher{
+//   constructor(privateName,lastName,grade,email){
+//     this.privateName=privateName;
+//     this.lastName=lastName;
+//     this.grade=grade;
+//     this.email=email;
+//   }
+// }
 
 
 // 10
-let arrryObj=[];
-function somee() {
-  let teacher = new Teacher (name_input.value,last_input.value,email_input.value,grade_input.value);
-  if(arrryObj.length<4){
-    arrryObj.push(teacher);
-    console.log(arrryObj);
-    arrryObj.forEach(item => {
-      for (const key in item) {
-        table.innerHTML+= `<tr><td>${item[key]}</td></tr>`
-        table.style="color:red; border: 1px solid;"
-      }
+// let arrryObj=[];
+// function somee() {
+//   let teacher = new Teacher (name_input.value,last_input.value,email_input.value,grade_input.value);
+//   if(arrryObj.length<4){
+//     arrryObj.push(teacher);
+//     console.log(arrryObj);
+//     arrryObj.forEach(item => {
+//       for (let key in item) {
+//         tbodyy.innerHTML+= `<td>${item[key]}</td>`
+//         tbodyy.style="color:red; border: 1px solid;"
+//       }
       
-    });
-  }
+//     });
+//   }
   
+// }
+
+
+class Course{
+ constructor(privateName,luctrerINOrNot,grades,students){
+  this.privateName=privateName;
+  this.luctrerINOrNot=luctrerINOrNot;
+  this.grades=grades;
+  this.students=students;
+ }
 }
+
+let arrayGrades=[100,89,55,66,43,22,7,66];
+let studentsArray=["lior","eldad","shimon","batel","dalia","daniel","netanel"];
+function printToScreen() {
+  let show = new Course("FULL-STACK","YES",arrayGrades,studentsArray);
+  for (const key1 in show) {
+    arrayGrades.forEach(item => {
+      id_h1.innerHTML=`${item[key1]}`
+   });
+   for (const key in show) {
+    studentsArray.forEach(item => {
+      id_h1.innerHTML=`${item[key]}`
+   });
+  }
+}
+}
+printToScreen()
