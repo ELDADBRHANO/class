@@ -78,43 +78,30 @@
 
 
 // 9
-// class Teacher{
-//   constructor(privateName,lastName,grade,email){
-//     this.privateName=privateName;
-//     this.lastName=lastName;
-//     this.grade=grade;
-//     this.email=email;
-//   }
-// }
+class Teacher{
+  constructor(privateName,lastName,grade,email){
+    this.privateName=privateName;
+    this.lastName=lastName;
+    this.grade=grade;
+    this.email=email;
+  }
+}
 
-// let teacher = new Teacher ("ester","metuku","seventh","estermetuku@gmail.com");
-// console.log(teacher);
 
 // 10
-class User{
-  constructor(age,idd,fullName,lastName){
-    this.age=age;
-    this.idd=idd;
-    this.fullName=fullName;
-    this.lastName=lastName;
-  }
-}
-
-
-const arrayUsers=[];
-
-
-function clickSomet() {
-  const shows = new User(age_input.value,email_input.value,name_input.value,last_input.value);
-  if(arrayUsers.length<4){
-    arrayUsers.push(shows);
-    arrayUsers.forEach(item => {
-     for (const key in item) {
-      table.innerHTML=`${item[key]}`;
-     }
+let arrryObj=[];
+function somee() {
+  let teacher = new Teacher (name_input.value,last_input.value,email_input.value,grade_input.value);
+  if(arrryObj.length<4){
+    arrryObj.push(teacher);
+    console.log(arrryObj);
+    arrryObj.forEach(item => {
+      for (const key in item) {
+        table.innerHTML+= `<tr><td>${item[key]}</td></tr>`
+        table.style="color:red; border: 1px solid;"
+      }
+      
     });
   }
-    
   
 }
-  
