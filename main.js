@@ -108,23 +108,22 @@
 
 
 // class Course{
-//  constructor(privateName,luctrerINOrNot,grades,students){
-//   this.privateName=privateName;
-//   this.luctrerINOrNot=luctrerINOrNot;
+//  constructor(courseName,isLucturer,grades,students){
+//   this.courseName=courseName;
+//   this.isLucturer=isLucturer;
 //   this.grades=grades;
 //   this.students=students;
 //  }
 // }
 
-// let arrayGrades=["20","89","55","66","43","22","7","100"];
-// let studentsArray=["lior","eldad","shimon","batel","dalia","daniel","netanel"];
+
 // function printToScreen() {
-//   let show = new Course("FULL-STACK","YES",arrayGrades,studentsArray);
+//   let show = new Course("FULL-STACK","YES",["20","89","55","66","43","22","7","100"],["lior","eldad","shimon","batel","dalia","daniel","netanel"]);
 // for (const key in show) {
 //   id_div.innerHTML+= `${key} : ${show[key]}` + " ";
 // }
-// id_div.innerHTML+= studentsArray.sort();  
-// id_div.innerHTML+= "<br>"+ arrayGrades.sort((a,b) => {
+// id_div.innerHTML+= show.students.sort();  
+// id_div.innerHTML+= "<br>"+ show.grades.sort((a,b) => {
 //   return b-a 
 // }) 
 // }
