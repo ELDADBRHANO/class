@@ -131,19 +131,22 @@
 
 
 
-class Student{
-  constructor(fullName,grade,id){
-    this.fullName=fullName;
-    this.grade=grade;
-    this.id=id;
-  }
-}
+// class Student{
+//   constructor(fullName,grade,id){
+//     this.fullName=fullName;
+//     this.grade=grade;
+//     this.id=id;
+//   }
+//    printShows() {
+//      console.log(`${this.fullName} ${this.grade} ${this.id}`)
+//   }
+// }
 
-function printShows() {
-  let show = new Student("Eldad Brhano","seventh","209245333");
-  let show2 = new Student("daniel","maleda","309279863");
-  console.log(show,show2)
-}
+
+//   let show = new Student("Eldad Brhano","seventh","209245333");
+//   let show2 = new Student("daniel","maleda","309279863");
+//   show.printShows()
+//   show2.printShows()
 
 
 // class HighSchoolStudent extends Student{
@@ -169,10 +172,14 @@ function printShows() {
 
 
 // class ElementrySchool extends Student{
-
+//   printShows(){
+//     super.printShows()
+//    console.log(`hello`); 
+//   }
 // }
 
 // let show5= new ElementrySchool("may","tadega","4387543");
+// show5.printShows()
 // console.log(show5);
 
 
