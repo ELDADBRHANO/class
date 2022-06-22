@@ -128,3 +128,50 @@
 // }) 
 // }
 // printToScreen()
+
+
+
+class Student{
+  constructor(fullName,grade,id){
+    this.fullName=fullName;
+    this.grade=grade;
+    this.id=id;
+  }
+}
+
+let show = new Student("Eldad Brhano","seventh","209245333");
+let show2 = new Student("daniel","maleda","309279863");
+console.log(show,show2);
+
+
+class HighSchoolStudent extends Student{
+}
+
+let show3= new HighSchoolStudent("lior dawit","10","2397e912");
+console.log(show3);
+
+
+
+
+class UniversityStudent extends Student{
+  constructor(fullName,grade,id,eyeColor,hairColor){
+    super(fullName,grade,id);
+    this.eyeColor=eyeColor;
+    this.hairColor=hairColor
+  }
+}
+let show4= new UniversityStudent("netanel tespay",10,"32943284","brown","black")
+console.log(show4)
+
+
+
+
+class ElementrySchool extends Student{
+
+}
+
+let show5= new ElementrySchool("may","tadega","4387543");
+console.log(show5);
+
+
+
